@@ -37,7 +37,6 @@ namespace xml2flat
             Console.WriteLine("Starting...");
             var myXslTrans = new XslCompiledTransform();
             Console.WriteLine("Loading and compiling xslt...");
-            //myXslTrans.Load("Teste.xslt");
             myXslTrans.Load("pacs.002.001.03.xslt");
             Console.WriteLine("Transforming xml...");
             myXslTrans.Transform("pacs.002.001.03.xml", "resulta.html");
